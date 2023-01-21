@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="api:jar">
+    <output-path>$PROJECT_DIR$/artifacts/api_jar</output-path>
+    <root id="archive" name="send-recieve.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/kz-sendApi/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Messages" />
+      <element id="module-output" name="service" />
+    </root>
+  </artifact>
+</component>

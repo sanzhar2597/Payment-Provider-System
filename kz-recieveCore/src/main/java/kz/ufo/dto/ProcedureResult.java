@@ -1,0 +1,28 @@
+package kz.ufo.dto;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import lombok.experimental.Accessors;
+
+import java.math.BigInteger;
+
+@Data
+@ToString
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
+public class ProcedureResult {
+    @JsonProperty("docId")
+    private int docId;
+
+    @JsonProperty("iban")
+    private String iban;
+
+}
